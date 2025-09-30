@@ -1,0 +1,8 @@
+npx create-next-app@latest react-nextjs
+
+TypeScript - No
+ESLint - Yes
+Tailwind CSS - No
+src/ - No
+App Router - Yes
+import alias - No

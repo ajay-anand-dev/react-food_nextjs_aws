@@ -1,0 +1,60 @@
+eslintrc.json file will have rules
+
+page.js, render a page section
+
+next js is server side, console log it will be display on terminal not on the browser
+
+components folder for routing and routing related works
+
+page.js => Create a new page (e.g., app/about/page.js creates a <your-domain>/about page)
+
+layout.js => Create a new layout that wraps sibling and nested pages
+
+not-found.js => Fallback page for "Not Found" errors (thrown by sibling or nested pages or layouts)
+
+error.js => Fallback page for other errors (thrown by sibling pages or nested pages or layouts)
+
+loading.js => Fallback page which is shown whilst sibling or nested pages (or layouts) are fetching data
+
+route.js => Allows you to create an API route (i.e., a page which does NOT return JSX code but instead data, e.g., in the JSON format)
+
+[slug] folder blog/[slug]/page.js
+blog-post1, blog-post2, {params.slug}
+
+install sqlite for database
+npm i better-sqlite3
+
+look for the initdb.js file
+node initdb.js
+
+turning a function to async will return a promise
+
+you can place loading, error file anywhere but to show some of the part you have to show it inside
+
+add not-found into the main app folder as it will be applicable to whole page or your choice
+
+every loading, errro, not-found will load inside layout file as {children} are being passed in it
+
+npm install slugify xss
+slugify for slug urls, xss cors site attack
+
+import fs from 'node:fs'
+to work with provide file system
+
+production
+npm run build
+npm start // production server, optimized code
+
+npm run build // generate static pages, that's why it loads old data and show result fast
+
+to overcome generate static page, cache issue we use
+revalidatePath('/meals')
+
+running npm on production will not look for the images from the public it will look the images from the .next folder
+Use AWS S3
+
+static page
+export const metaData
+
+dynamic page [mealSlug]
+export async function generateMetaData() { }
